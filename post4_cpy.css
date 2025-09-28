@@ -91,7 +91,7 @@ body{
 
 .hero{
 	height: 400px;
-	background-image: url(../src/riku\ lu.jpg);
+	background-image: url(riku\ lu.jpg);
 	background-size: cover;
 	background-position: 0 -100;
 	border-top: 5px solid #429CC3;
