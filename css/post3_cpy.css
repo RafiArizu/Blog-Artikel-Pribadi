@@ -91,7 +91,7 @@ body{
 
 .hero{
 	height: 400px;
-	background-image: url(abcd.jpg);
+	background-image: url(../gambar3.jpg);
 	background-size: cover;
 	background-position: 0 -100;
 	border-top: 5px solid #429CC3;
