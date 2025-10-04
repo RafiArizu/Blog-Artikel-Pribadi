@@ -68,7 +68,7 @@ body{
 .img_header {
   width: 100%;
   height: 360px; /* turunkan sedikit supaya overlap avatar pas */
-  background-image: url('biru_keren_cpt.jpg');
+  background-image: url('../gambar6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
