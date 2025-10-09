@@ -55,11 +55,12 @@ body{
 }
 
 .container{
-    width: 100%;
+    width: 90%;
     margin: auto;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* X | Y | blur | warna */
     border-radius: 10px; /* opsional biar sudutnya ga kaku */
+
 }
 
 
@@ -245,7 +246,7 @@ body{
 }
 
 /* Card kecil */
-.card_kecil1, .card_kecil2, .card_kecil3 {
+.card_kecil {
   flex: 1; /* biar semua punya lebar proporsional */
   max-width: 320px; /* batas maksimal */
   max-height: 320px;

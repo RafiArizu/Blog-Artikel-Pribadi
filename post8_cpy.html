@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel Apa itu relation pada ERD? mengapa many-to-many tidak baik digunakan pada ERD</title>
+    <link rel="stylesheet" href="css/post7_cpy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="judul_post">Post 8</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+
+        <div class="hero"></div>
+    
+        <div class="content">
+            <h2>Apa itu relation pada ERD? mengapa many-to-many tidak baik digunakan pada ERD</h2>
+            <p class="penulis">Ditulis Oleh <a 
+                href="#">Rafi Ariz Rahmal</a>. pada 9 Oktober 2025.
+            </p>
+
+            <p>Dalam ERD, relasi (relationship) menggambarkan keterkaitan antara dua entitas atau lebih, misalnya “Mahasiswa mengambil MataKuliah”. Relasi bisa berupa satu-ke-satu (1:1), satu-ke-banyak (1:N), atau banyak-ke-banyak (M:N). Banyak-ke-banyak sering bermasalah karena kompleksitas dan potensi redundansi data.</p>
+            
+            <p>Relasi 1:1 memperlihatkan bahwa satu entitas A berhubungan dengan tepat satu entitas B, dan sebaliknya; sedangkan relasi 1:N menunjukkan satu entitas A bisa berhubungan ke banyak entitas B. Relasi M:N menunjukkan banyak entitas A dapat berhubungan dengan banyak entitas B, namun secara langsung M:N yang tidak dimodelkan melalui tabel perantara (junction table) akan menyulitkan pengelolaan data dan menyebabkan duplikasi data. Dalam basis data relasional, relasi M:N harus dipecah dengan table penengah agar integritas data tetap terjaga dan agar query menjadi lebih efisien.</p>
+
+            <p>Sebagai contoh, jika kita punya entitas Mahasiswa dan MataKuliah, relasi semula mungkin M:N karena seorang mahasiswa bisa mengambil banyak mata kuliah dan satu mata kuliah diambil banyak mahasiswa. Tapi secara desain yang baik, kita buat tabel penengah KRS (atau “Pengambilan”) untuk memecah M:N menjadi dua relasi 1:N (Mahasiswa → KRS dan MataKuliah → KRS). Dengan cara ini, kita menghindari redundansi, memudahkan pemrosesan query, dan menjaga konsistensi data antar entitas.</p>
+            
+        </div>
+        <div class="footer">
+            <p class="copy">@Copyright 2025. RafiArizRahmal</p>
+        </div>
+    </div>
+
+</body>
+</html>
